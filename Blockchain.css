@@ -1,0 +1,130 @@
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+/*--- Header Starts ---*/
+header {
+    background-color:  rgb(29, 140, 183);
+    color: #f0f0f0;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+h4 {
+    margin: 0;
+    margin-left: 10px;
+}
+
+h1 {
+    margin-top: 20px;
+}
+  
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; 
+}
+/*--- Ends Header ---*/
+
+
+/*--- Services Section Starts---*/
+.service {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+}
+  
+.service .service-items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+  
+.service .service-item {
+    flex: 0 0 calc(33.333% - 20px); 
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+}
+  
+.service .service-container {
+    background-color: rgb(225, 225, 225);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease; 
+}
+  
+.service .service-item:hover .service-container {
+    background-color: #a8a8a8; 
+}
+  
+.service .service-item .icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    color: #051094;
+    transition: color 0.3s ease; 
+}
+  
+.service .service-item .icon:hover {
+    color: #63c5da; 
+}
+  
+.service .service-item h4 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+  
+.service .service-item p {
+    font-size: 16px;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #051094;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+  
+.btn:hover {
+    background-color: #63c5da;
+}
+/*--- Ends Services Section ---*/
+
+
+/* Adjust button size for smaller screens */
+@media (max-width: 768px) {
+    .btn {
+      padding: 8px 16px;
+    }
+}
